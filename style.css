@@ -1,0 +1,58 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: sans-serif;
+  font-weight: bold;
+  height: 100vh;
+  background-color: black;
+  color: #eee;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  overflow: hidden;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.type-txt {
+  font-weight: normal;
+  color: #38dd32;
+}
+
+.typing {
+  animation: none;
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  background-color: #ccc;
+  margin-left: 0.3rem;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #eee;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
